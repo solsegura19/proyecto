@@ -1,0 +1,157 @@
+/* reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body{
+    background-color: #f9d6ac;
+}
+
+
+/* Estilos del Header*/
+
+header{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    height: 10VH;
+    margin: 0.5rem;
+   }
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/*Estilos del main*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    
+}
+
+main nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.titulo{
+    color: rgb(241, 196, 128);
+    height: 15vh;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+main h2{
+    text-align: center;
+    height: 25vh;
+}
+
+main h2 span{
+    display: block;
+}
+
+.contenedor{
+    background: rgb(9,9,10);
+    background: linear-gradient(0deg, rgba(9,9,10,1) 0%, rgba(57,55,57,0.8211659663865546) 35%, rgba(163,157,159,0.6558998599439776) 100%);
+    
+}
+
+main img{
+    width: 90%;
+    margin: 1.5rem;
+}
+
+/*estilos del menu*/
+
+.menu{
+    animation-name: menu-latido;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+
+@keyframes menu-latido{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.3);
+    }
+}
+
+/*estilos de footer*/
+
+footer div{
+    text-align: center;
+    margin: 6rem;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido p{
+    padding: 1rem;
+}
+
+.contenido img{
+    width: 50%;
+    border: 2px solid rgb(61, 56, 56);
+}
+
+/*mq */
+
+@media screen and (min-width:1024px){
+  .contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    justify-items: center;
+  }
+
+/*estilos del contenido*/
+.contenido{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "h1 h1"
+        "texto img"
+        "texto-dos texto-dos";
+    justify-items: center;
+        
+}
+
+.contenido h1{
+    grid-area: h1;
+}
+
+.contenido .texto{
+    grid-area: texto;
+}
+
+.contenido .texto-dos{
+    grid-area: texto-dos;
+}
+
+.contenido img{
+    grid-area: img;
+    
+}
+
+
+}
