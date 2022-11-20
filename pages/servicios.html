@@ -4,34 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
      <!-- link css-->
      <link rel="stylesheet" href="../css/styles.css">
     <title>Servicios - SSFotografia</title>
 </head>
 <body>
-    <!-- etiqueta para el encabezado-->
-    <header>
-        <h3>Sol Segura</h3>
 
-        <!-- menu de navegacion-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
+    <!-- etiqueta para el encabezado-->
+
+ <header class="container">
+     <div class="row">
+         <h3 class="col 5">Sol Segura</h3>
+   
+      <!-- menu de navegacion-->
+        <nav class="navbar navbar-expand-lg col 7">
+         <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+             </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+                <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                 </li>
+                 <li class="nav-item">
+                       <a class="nav-link" href="../pages/porfolio.html">Porfolio</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="../pages/sobre-mi.html">Sobre Mi</a>
                 </li>
-                <li>
-                    <a href="../pages/porfolio.html">porfolio</a>
-                </li>
-                <li>
-                    <a href="../pages/sobre-mi.html">sobre mi</a>
-                </li>
-                <li>Servicios</li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+                 <li class="nav-item">
+                      <a class="nav-link" href="#">Servicios</a>
+                 </li>
+                <li class="nav-item">
+                       <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                   </ul>
+                 </div>
+            </div>
         </nav>
-    </header>
+    </div>
+ </header>
 
      <!-- etiqueta para el contenido principal-->
      
@@ -42,21 +60,37 @@
             <ul>
                 <li>Niños</li>
                 <li>Cumpleaños</li>
-                <li>Parejas/compromiso</li>
+                <li>Parejas</li>
                 <li>Books</li>
             </ul>
         </h3>
 
-        <div class="contenedor1">
-            <div class="caja1">
-                <img src="../img/foto-servicio1.jpg" alt="foto de un bebe sonriendo">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="caja1">
-                <img src="../img/foto-servicio2.jpg" alt="foto de un bebe mirando a la camara">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/foto-servicio1.jpg" class="d-block w-100" alt="beba sonriendo">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/foto-servicio2.jpg" class="d-block w-100" alt="bebe mirando a la camara">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/foto-servicio3.jpg" class="d-block w-100" alt="familia festejando Cumpleaños">
+              </div>
             </div>
-            <div class="caja1">
-                <img src="../img/foto-servicio3.jpg" alt="foto de una familia cantando el cumpleaños"></div>
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         
     </main>
         
@@ -64,11 +98,13 @@
     <footer>
         <!-- etiquetas div, division, divisor,"comodin"-->
         <div> 
-            <h4>Nuestras redes sociales</h4>
             <span><a href="https://www.instagram.com/solsegura.fotografia/" target="_blank"> Ir a Instagram</a></span>
-             <span> Otro contacto</span>
         </div>
     </footer>
+
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
 
 </body>
 </html>
