@@ -1,0 +1,78 @@
+/*Estilos del main*/
+
+main{
+    @include flex;
+    flex-direction: column;
+
+    h1{
+        color: $color-titulo;
+        margin: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .titulo{
+        font-size: 2rem;
+    }
+
+    div{
+        background: rgb(9,9,10);
+    background: linear-gradient(0deg, rgba(9,9,10,1) 0%, rgba(57,55,57,0.8211659663865546) 35%, rgba(163,157,159,0.6558998599439776) 100%); 
+        img{
+            width: 90%;
+            margin: 1.5rem;
+        }
+    }
+
+    h2{
+        color: $color-subtitulo;
+        text-align: center;
+        padding: 1rem;
+        span{
+            display: block;
+        }
+        ul{
+            @include flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 1rem;
+        }
+    }
+
+    nav{
+        ul{
+            @include flex;
+            list-style: none;
+            gap: 1rem; 
+        }
+    }
+
+    .foto-1{
+        @extend %estilosFotos;
+    }
+
+    .foto-2{
+        @extend %estilosFotos;
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.3rem;
+        color: #f5a2a2;
+        span{
+            display: block;
+        }
+    }
+
+   form{
+    display: block;
+    margin: 1rem;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 5px;
+    text-align: center;
+
+   }
+    
+
+}

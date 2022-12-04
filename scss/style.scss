@@ -1,0 +1,103 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// importando archivos secundarios
+
+@import "utilidades/mixin";
+@import "utilidades/variables";
+@import "utilidades/extend";
+@import "contenedores/main";
+@import "contenedores/footer";
+
+
+
+body{
+    background-image: url(../img/Foto-fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*estilos de header*/ 
+
+header{
+    h3{
+        color: $color-encabezado;
+        padding: 1rem;
+    }
+}
+
+.menu{
+    animation-name: menu-latido;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+
+@keyframes menu-latido{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.3);
+    }
+}
+
+
+
+/*mq */
+
+@media screen and (min-width:1024px){
+    .contenedor{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(250px, auto);
+      justify-items: center;
+    }
+  
+  /*estilos del contenido*/
+  .contenido{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 
+          "h1 h1"
+          "texto img"
+          "texto-dos texto-dos";
+      justify-items: center;       
+  }
+  
+  .contenido h1{
+      grid-area: h1;
+  }
+  
+  .contenido .texto{
+      grid-area: texto;
+  }
+  
+  .contenido .texto-dos{
+      grid-area: texto-dos;
+  }
+  
+  .contenido img{
+      grid-area: img;
+
+  }
+  
+  main ul li{
+      font-size: 1.5rem;
+  }
+  
+  .foto-2 {
+      position: absolute;
+  }
+  
+  footer div{
+      padding: 1.5rem;
+  }
+  }
+  

@@ -1,0 +1,8 @@
+//mixin para flex
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2.5rem;
+}
