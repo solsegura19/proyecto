@@ -15,87 +15,84 @@
     <title>Contacto - SSFotografia</title>
 </head>
 <body>
-    <header class="container">
-        <div class="row">
-           <h3 class="col 5">Sol Segura</h3>
-   
-           <!-- menu de navegacion-->
-           <nav class="navbar navbar-expand-lg col 7">
-               <div class="container-fluid">
-                 <a class="navbar-brand" href="#"></a>
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-                 </button>
-                 <div class="collapse navbar-collapse" id="navbarNav">
-                   <ul class="navbar-nav">
-                     <li class="nav-item">
-                       <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-link" href="../pages/porfolio.html">Porfolio</a>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-link" href="../pages/sobre-mi.html">Sobre Mi</a>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-link" href="../pages/servicios.html">Servicios</a>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-link" href="#">Contacto</a>
-                     </li>
-                   </ul>
-                 </div>
-               </div>
-             </nav>
+  <header id="Arriba" class="container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/Logo.PNG" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/porfolio.html">Porfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/sobre-mi.html">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
         </div>
-       </header>
+      </div>
+    </nav>
+  </header>
 
     <!-- etiqueta de contenido principal-->
-<main>
+<main class="contacto">
     <h1>Contacto</h1>
-
-    <!-- formulario-->
-
-<form action="">
-    <fieldset>
+    <form action="">
+      <fieldset>
         <legend>Completa tus datos</legend>
         <div>
-            <label for="">completa tu nombre</label>
+            <label for="">Tu Nombre:</label>
             <input type="text">
         </div>
 
         <div>
-            <label for="">completa tu email</label>
+            <label for="">Tu Email: </label>
             <input type="email" placeholder="tuemail@gmail.com">
         </div>
 
         <div>
-            <label for="">Tu Telefono/Celular</label>
+            <label for="">Telefono/Celular:</label>
             <input type="tel" placeholder="11 1111-1111">
         </div>
 
         <div>
-            <label for="">Tu Mensaje</label>
-            <input type="text">
+            <label for="">Mensaje:</label>
+            <input type="text" class="mensaje">
         </div>
 
-        <div>
+        <div class="botones">
             <input type="submit">
             <input type="reset">
         </div>
-    </fieldset>
-</form>
-
-<img src="../img/Contacto.jpg" alt="foto de un libro con un cafe" class="foto-2" >
-
+      </fieldset>
+    </form>
+    <img src="../img/Contacto.jpg" alt="foto de un libro con un cafe" class="foto-2">
 </main>
 
  <!-- etiqueta para el pie de pagina-->
+ 
  <footer>
-    <!-- etiquetas div, division, divisor,"comodin"-->
-    <div> 
-        <span><a href="https://www.instagram.com/solsegura.fotografia/" target="_blank"> Ir a Instagram</a></span>
-    </div>
+  <div>
+    <a class="arriba" href="#Arriba"> Ir arriba</a>
+  </div>
+  <div> 
+      <span><a href="https://www.instagram.com/solsegura.fotografia/" target="_blank"><img src="../img/logo-ig.png" alt="logo de instagram"></a>
+      </span>
+      <span><a href="https://es-la.facebook.com/" target="_blank"><img src="../img/logo-fb.png" alt="logo de facebook"></a>
+      </span>
+  </div>
+  <h3>todos los derechos reservados.</h3>
 </footer>
 
 <!-- JavaScript Bundle with Popper -->

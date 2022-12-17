@@ -1,78 +1,129 @@
 /*Estilos del main*/
 
 main{
-    @include flex;
-    flex-direction: column;
 
     h1{
+        @include flex;
         color: $color-titulo;
-        margin: 2rem;
-        font-size: 1.5rem;
-    }
-
-    .titulo{
-        font-size: 2rem;
-    }
-
-    div{
-        background: rgb(9,9,10);
-    background: linear-gradient(0deg, rgba(9,9,10,1) 0%, rgba(57,55,57,0.8211659663865546) 35%, rgba(163,157,159,0.6558998599439776) 100%); 
-        img{
-            width: 90%;
-            margin: 1.5rem;
+        margin: 3rem;
+        font-size: 35px;
+        font-family: 'Caveat', cursive;
+        font-family: 'Kaushan Script', cursive;
+        font-family: 'Raleway', sans-serif;
+        span{
+            display: block;
+            text-align: center;
         }
     }
 
-    h2{
+    .subtitulo{
         color: $color-subtitulo;
         text-align: center;
-        padding: 1rem;
+        margin: 3rem;
+        font-size: 20px;
         span{
             display: block;
         }
+    }
+       
+    .menu{
         ul{
-            @include flex;
-            flex-direction: row;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 2rem;
             list-style: none;
-            gap: 1rem;
+            gap: 1.5rem;
+            font-size: 20px;
+            li{
+                a{
+                    color: $color-menu;
+                }
+            }
+            li:hover{
+             background-color: rgb(216, 226, 226);  
+             transform: scale(0.9);     
+            }
+            li a:link{
+                text-decoration: none;
+            }
         }
     }
 
-    nav{
-        ul{
-            @include flex;
-            list-style: none;
-            gap: 1rem; 
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-auto-rows: 200px;
+        padding: 20px;
+        grid-gap: 10px;
+        .foto-13{
+            object-position: 50% 26%;
+            }
+        .foto-3{
+            object-position: 50% 30%;
         }
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+      
     }
-
+    
     .foto-1{
+        @include flex;
         @extend %estilosFotos;
+        margin: 0.5rem;
     }
 
     .foto-2{
+        @include flex;
         @extend %estilosFotos;
+        margin: 0.5rem;
+        
     }
 
     p{
+        @include flex;
         text-align: center;
+        margin: 1rem;
         font-size: 1.3rem;
-        color: #f5a2a2;
+        color:#293560;
         span{
             display: block;
         }
     }
 
+    .texto{
+        color:#293560;
+    }
+
+    .eventos{
+        @include flex;
+    }
+
    form{
-    display: block;
-    margin: 1rem;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-weight: 100;
-    line-height: 5px;
-    text-align: center;
-
-   }
+    @include flex;
+    padding: 20px;
+    margin: 3.5rem;
+    right: 200px;
+    width: 300px;
     
+    input{
+        outline: none;
+        padding: 5px;
+    }
 
+    .mensaje{
+        padding: 20px;
+    }
+
+    .botones{
+        margin: 25px;
+        padding: 15px;
+    }
+   }   
 }
+
+
+
